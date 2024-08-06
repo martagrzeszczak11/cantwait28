@@ -15,3 +15,7 @@ class ItemModel {
     return releaseDate.difference(DateTime.now()).inDays.toString();
   }
 }
+
+String relaseDateFormatted() {
+  return 'example';
+}
