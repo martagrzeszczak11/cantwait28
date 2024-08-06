@@ -102,7 +102,9 @@ class _ListViewItem extends StatelessWidget {
     return InkWell(
       onTap: () {
         Navigator.of(context).push(
-          MaterialPageRoute(builder: (context) => DetailsPage(id: itemModel.id),),
+          MaterialPageRoute(
+            builder: (context) => DetailsPage(id: itemModel.id),
+          ),
         );
       },
       child: Padding(
@@ -146,7 +148,7 @@ class _ListViewItem extends StatelessWidget {
                           ),
                           const SizedBox(height: 10),
                           Text(
-                            itemModel.releaseDate.toString(),
+                            itemModel.releaseDateFormatted(),
                           ),
                         ],
                       ),
